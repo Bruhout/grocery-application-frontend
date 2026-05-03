@@ -2,9 +2,7 @@ const { createElement: h, useState, useEffect, useReducer, useCallback } = React
 const { render } = ReactDOM;
 const { createStore } = Redux;
 
-/* ────────────────────────────────────────────
-   REDUX STORE
-──────────────────────────────────────────── */
+/*   REDUX STORE   */
 const ADD_TO_CART = 'ADD_TO_CART';
 const REMOVE_FROM_CART = 'REMOVE_FROM_CART';
 const UPDATE_QTY = 'UPDATE_QTY';
@@ -352,9 +350,8 @@ function CategoryPage({ category }) {
   );
 }
 
-/* ────────────────────────────────────────────
-   APP ROOT
-──────────────────────────────────────────── */
+
+/*   APP ROOT   */
 function App() {
   const state = useStore();
   const [sidebarOpen, setSidebarOpen] = useState(true);
